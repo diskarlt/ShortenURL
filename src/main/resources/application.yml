@@ -1,0 +1,19 @@
+spring:
+  http:
+    encoding:
+      charset:    UTF-8
+  mvc:
+    view:
+      prefix:     /jsp/
+      suffix:     .jsp
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url:               jdbc:mariadb://localhost:3306/jwhong
+    username:          jwhong
+    password:          jwhong.123
+  jpa:
+    hibernate:
+      ddl-auto:   create-only
+server:
+  tomcat:
+    uri-encoding: UTF-8
